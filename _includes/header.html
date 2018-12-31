@@ -4,7 +4,7 @@
 
   <div class="nav">
    
-    <input type="checkbox" id="menu-toggle" style="z-index:102">
+    <input type="checkbox" id="menu-toggle">
     <label for="menu-toggle" class="menu-icon" style="z-index:102">
         <!--div data-icon="ei-navicon"></div-->
         <svg viewBox="0 0 18 15">
@@ -15,7 +15,7 @@
     </label>
     <div class="site-nav">
       <nav>
-        <ul class="page-link">
+        <ul class="page-link"  style="z-index:102">
           <li><a href="{{ "/" | prepend: site.baseurl }}">Home</a></li>
           <li><a href="{{ "/archive" | prepend: site.baseurl }}">Posts</a></li>
           <li><a href="{{ "/about" | prepend: site.baseurl }}">About</a></li>
