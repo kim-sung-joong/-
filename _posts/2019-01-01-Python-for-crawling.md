@@ -25,8 +25,5 @@ def main():
             print(text.get_text()[:num])
         else:
             print(text.get_text())
-            
-if __name__ == "__main__":
-    main()
 ```
 
