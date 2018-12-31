@@ -9,15 +9,16 @@ category: Python
 
 ###### 출처(나무위키)
 
-```import urllib.request
+```
+import urllib.request
 from bs4 import BeautifulSoup
 
 def main():
+
     url = "http://www.newsis.com/eco/list/?cid=10400&scid=10404"
     req = urllib.request.Request(url)
     sourcecode = urllib.request.urlopen(url).read()
     soup = BeautifulSoup(sourcecode, "html.parser")
-    
     for text in soup.find_all("strong",class_="title"):
 
         num = text.get_text().find("…")
