@@ -1,5 +1,7 @@
 <header class="site-header">
-
+   
+    <h2 class="logo"><a href="{{ site.baseurl }}/">{{ site.title }}</a></h2>
+    
     <div class="nav" style="z-index:102">
       <label for="menu-toggle" class="menu-icon">
           <!--div data-icon="ei-navicon"></div-->
@@ -9,17 +11,17 @@
             <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
           </svg>
       </label>
-  <h2 class="logo"><a href="{{ site.baseurl }}/">{{ site.title }}</a></h2>
-        <input type="checkbox" id="menu-toggle">
-     <div class="site-nav">
-      <nav>
-        <ul class="page-link">
-          <li><a href="{{ "/" | prepend: site.baseurl }}">Home</a></li>
-          <li><a href="{{ "/archive" | prepend: site.baseurl }}">Posts</a></li>
-          <li><a href="{{ "/about" | prepend: site.baseurl }}">About</a></li>
-          <li><a href="{{ "/feed.xml" | prepend: site.baseurl }}">RSS</a></li>
-        </ul>
-      </nav>
-    </div>
+      <input type="checkbox" id="menu-toggle">
+        
+      <div class="site-nav">
+        <nav>
+            <ul class="page-link">
+                <li><a href="{{ "/" | prepend: site.baseurl }}">Home</a></li>
+                <li><a href="{{ "/archive" | prepend: site.baseurl }}">Posts</a></li>
+                <li><a href="{{ "/about" | prepend: site.baseurl }}">About</a></li>
+                <li><a href="{{ "/feed.xml" | prepend: site.baseurl }}">RSS</a></li>
+            </ul>
+        </nav>
+      </div>
   </div>
 </header>
