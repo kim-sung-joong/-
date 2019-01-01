@@ -134,13 +134,13 @@ input#menu-toggle {
 .nav .menu-icon {
   display:none;
   position:absolute;
-  right:15%;
+  right:30%;
   
   @include media-query($on-laptop) {
     top: 67px;
 
     @include media-query(400px) {
-      top: 10px;
+      top: 8px;
     }
 
     display: block;
