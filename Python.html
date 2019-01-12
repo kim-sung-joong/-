@@ -10,7 +10,7 @@ layout: default
     <div class="category-name">
       <h2>{{ category | first }}</h2>
     </div>
-    {% for post in category.last %}
+    {% for post in category.last.Python %}
 
     <div class="post_title">
       <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title}}</a>
