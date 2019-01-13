@@ -5,7 +5,7 @@ layout: default
 <div>
 
   <section class="archive_list">
-    {site.categories}
+    {% for category in site.categories %}
 
     <div class="category-name">
       <h2>{{ category | first }}</h2>
@@ -23,3 +23,4 @@ layout: default
 
   </section>
 </div>
+
