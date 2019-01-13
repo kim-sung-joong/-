@@ -5,12 +5,12 @@ layout: default
 <div>
 
   <section class="archive_list">
-    {% for category in site.categories %}
+    {% for category in site.categories.Python %}
 
     <div class="category-name">
       <h2>{{ category | first}}</h2>
     </div>
-    {% for post in category.last %}
+<!--     {% for post in category.last %} -->
 
     <div class="post_title">
       <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title}}</a>
@@ -19,7 +19,7 @@ layout: default
 
     {% endfor %}
 
-    {% endfor %}
+<!--     {% endfor %} -->
 
   </section>
 </div>
