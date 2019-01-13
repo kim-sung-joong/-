@@ -6,19 +6,7 @@ title: Python
 
 
 <div id="archives">
-{% for category in site.categories %}
-  <div class="archive-group">
-    {% capture Python %}{{ category | first }}{% endcapture %}
-    <div id="#{{ Python | slugize }}"></div>
-    <p></p>
-    
-    <h3 class="category-head">{{ Python }}</h3>
-    <a name="{{ Python | slugize }}"></a>
-    {% for post in site.categories[Python] %}
-    <article class="archive-item">
-      <h4><a href="{{ site.baseurl }}{{ post.url }}">{{post.title}}</a></h4>
-    </article>
-    {% endfor %}
-  </div>
+{% for post in site.categories.Python %}
+ <li><span>{{ post.date | date_to_string }}</span> &nbsp; <a href="{{ post.url }}">{{ post.title }}</a></li>
 {% endfor %}
 </div>
