@@ -31,9 +31,6 @@ public class BubbleSort {
 #### -> for (int j = 0; j < arr.length-i-1; j++)
 #### 앞에 있는 값과 뒤에 있는 값을 확인해 큰값 이를 뒤로 swap 한다.
 
-</br>
-</br>
-</br>
 
 ### 삽입정렬(Insert Sort)
 
@@ -62,10 +59,6 @@ public class InsertSort {
 #### -> for (int i = 0; i < arr.length-1; i++)
 #### 앞에 있는 값들 중에서 현재의 값보다 작은 값이 있다면 그 값을 찾아서 swap한다.
 #### ->	for (int j = i+1; j>0; j--)
-
-</br>
-</br>
-</br>
 
 ### 선택정렬 (Select Sort)
 
@@ -100,9 +93,6 @@ public class SelectSort {
 #### min 값을 설정하고 min보다 작은 값이 있는지 배열의 크기만큼 탐색한다.
 #### -> for (int j = i+1; j < arr.length; j++)
 
-</br>
-</br>
-</br>
 
 ### Merge Sort
 -------------------------------------------------------------------------
